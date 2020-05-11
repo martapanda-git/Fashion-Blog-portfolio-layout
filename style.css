@@ -19,9 +19,6 @@ html {
     font-size: 10px;
 }
 
-body {
-    /* min-height: 2000px; */
-}
 
 div.wrapper {
     margin: 0 auto;
@@ -33,20 +30,61 @@ div.wrapper a {
     cursor: pointer;
 }
 
-nav.left {
+.left {
     position: fixed;
     margin-top: 25px;
     margin-left: 18px;
     font-size: 2rem;
     color: #945430;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.fa-bars,
+.fa-times {
+    display: none;
+}
+
+.fashow {
+    display: block;
+}
+
+.leftmenu {
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    background-color: #E8E0DD;
+    width: 100vw;
+    height: 90vh;
     z-index: 999;
+    transition: .3s linear;
+}
+
+.leftmenu.active {
+    left: 0;
+}
+
+ul li {
+    list-style: none;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+    line-height: 10rem;
+    text-align: center;
+    letter-spacing: 1.32px;
+}
+
+div.leftmenu ul li:hover {
+    background-color: #33342F;
+    color: #BFB3AF;
 }
 
 nav.right {
     position: fixed;
     top: 30px;
     right: 18px;
-    z-index: 1000;
+    z-index: 998;
 }
 
 nav.right i {
@@ -396,7 +434,6 @@ section.social .btnbrown {
     align-items: center;
 }
 
-.instagramimgs img {}
 
 .sociallinks {
     grid-area: socialbar;
