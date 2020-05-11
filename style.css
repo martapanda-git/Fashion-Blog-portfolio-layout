@@ -50,7 +50,7 @@ div.wrapper a {
 }
 
 .leftmenu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100vw;
     background-color: #E8E0DD;
