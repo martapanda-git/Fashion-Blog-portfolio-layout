@@ -50,12 +50,12 @@ div.wrapper a {
 }
 
 .leftmenu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -100vw;
     background-color: #E8E0DD;
     width: 100vw;
-    height: 90vh;
+    height: 100%;
     z-index: 999;
     transition: .3s linear;
 }
